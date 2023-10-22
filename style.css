@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Open+Sans:ital,wght@1,500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(19, 27, 50);
+    color: rgb(255, 255, 255);
+    height: 60px;
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-family: 'Bree Serif', serif;
+    font-family: 'Open Sans', sans-serif;
+    padding: 0 15px;
+
+}
+nav ul{
+    list-style-type: none;
+    
+}
+
+
+.gameContainer
+{
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.gameInfo{
+    font-size: 1.5rem;
+}
+.container{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family: 'Bree Serif', serif;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+}
+.line{
+    background-color: black;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: #911d91;
+    transition: width 0.3s ease-in-out;
+}
+
+.box{
+    border: 2px solid black;
+    font-size: 6vw;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box:hover{
+    background-color: rgb(187, 189, 220);
+}
+
+.gameInfo{
+    padding: 0 30px;
+
+}
+.imgbox img{
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+.info{
+    font-size: 25px;
+}
+#reset{
+    margin: 10px 25px;
+    padding: 5px 30px;
+    background: #f3e7f9;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Bree Serif', serif; ;
+    font-size: 22px;
+    /* font-weight: bolder; */
+}
+
+
+
+
+
+.bt-0{
+    border-top: 0;
+}
+.bb-0{
+    border-bottom: 0;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+
+
+@media screen and (max-width: 800px)
+{
+    .gameContainer{
+    flex-wrap:wrap;
+    }
+    .gameInfo{
+        margin-top: 30px;
+    }
+    .gameInfo h1{
+        font-size: 1.8rem;
+    }
+    .container{
+        grid-template-rows: repeat(3,17vw);
+        grid-template-columns: repeat(3,17vw);
+        font-family: 'Bree Serif', serif;
+        padding: 10px;
+        /* display: grid; */
+    }
+    .line{
+        background-color: black;
+        width: 51vw;
+        height: 3px;
+        position: absolute;
+    }
+}
