@@ -120,9 +120,10 @@ nav ul{
         /* display: grid; */
     }
     .line{
+    /* .line{
         background-color: black;
         width: 51vw;
         height: 3px;
         position: absolute;
-    }
+    } */
 }
